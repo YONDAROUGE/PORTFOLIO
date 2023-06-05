@@ -1,16 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.caf9e5e4.css",
-    "main.js": "/static/js/main.f6b55dc1.js",
+    "main.css": "/static/css/main.a1a2d788.css",
+    "main.js": "/static/js/main.bdcaee1b.js",
+    "static/media/img2.png": "/static/media/img2.fdda94992ddcdcedf23d.png",
     "static/media/CPA.pdf": "/static/media/CPA.042554ce5575702c1f53.pdf",
-    "static/media/ARISELOGO.png": "/static/media/ARISELOGO.a9bea2182d0ae754c700.png",
-    "static/media/FIERCE.png": "/static/media/FIERCE.53f24d0b237ea1022fb3.png",
+    "static/media/ARISELOGO.png": "/static/media/ARISELOGO.9c1dfaa08015b3301990.png",
+    "static/media/FIERCE.png": "/static/media/FIERCE.809161d6e14391328afb.png",
+    "static/media/img5.png": "/static/media/img5.9cb8c305d5e59ba3d21f.png",
     "index.html": "/index.html",
-    "main.caf9e5e4.css.map": "/static/css/main.caf9e5e4.css.map",
-    "main.f6b55dc1.js.map": "/static/js/main.f6b55dc1.js.map"
+    "main.a1a2d788.css.map": "/static/css/main.a1a2d788.css.map",
+    "main.bdcaee1b.js.map": "/static/js/main.bdcaee1b.js.map"
   },
   "entrypoints": [
-    "static/css/main.caf9e5e4.css",
-    "static/js/main.f6b55dc1.js"
+    "static/css/main.a1a2d788.css",
+    "static/js/main.bdcaee1b.js"
   ]
 }
