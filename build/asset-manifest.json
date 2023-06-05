@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.caf9e5e4.css",
+    "main.js": "/static/js/main.f6b55dc1.js",
+    "static/media/CPA.pdf": "/static/media/CPA.042554ce5575702c1f53.pdf",
+    "static/media/ARISELOGO.png": "/static/media/ARISELOGO.a9bea2182d0ae754c700.png",
+    "static/media/FIERCE.png": "/static/media/FIERCE.53f24d0b237ea1022fb3.png",
+    "index.html": "/index.html",
+    "main.caf9e5e4.css.map": "/static/css/main.caf9e5e4.css.map",
+    "main.f6b55dc1.js.map": "/static/js/main.f6b55dc1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.caf9e5e4.css",
+    "static/js/main.f6b55dc1.js"
+  ]
+}
