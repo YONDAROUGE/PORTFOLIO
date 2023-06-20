@@ -41,11 +41,11 @@ const Contact = () => {
               <h4>LinkedIn</h4>
               <h5>Profile</h5>
               <a
-                href=""
+                href="https://www.linkedin.com/in/nicci-nchami-b18bb227b/"
                 target="_blank"
                 rel="noreferrer"
               >
-                Tape me on LinkedIn
+                Get to me on LinkedIn
               </a>
             </article>
 

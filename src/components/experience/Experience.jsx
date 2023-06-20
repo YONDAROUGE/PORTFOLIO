@@ -32,17 +32,17 @@ const experience = () => {
         <div className='experience_programming'>
           <h3>Programming</h3>
           <div className='experience__content'>
-            <article className='experience__details'>
+            <article className='JAVASCRIPT'>
               <BsPatchCheckFill className='experience__details__icon' />
               <div><h4>C</h4>
-              <small className='text-light'>Experienced</small></div>
+              <small className='text-light'>Beginner</small></div>
             </article>
-            <article className='experience__details'>
+            <article className='HTML'>
               <BsPatchCheckFill className='experience__details__icon' />
               <div><h4>C++</h4>
               <small className='text-light'>Experienced</small></div>
             </article>
-            <article className='experience__details'>
+            <article className='CSS'>
               <BsPatchCheckFill className='experience__details__icon' />
               <div><h4>Java</h4>
               <small className='text-light'>Intermediate</small></div>
