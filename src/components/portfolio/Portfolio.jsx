@@ -57,9 +57,9 @@ const Portfolio = () => {
 
   const[data , setData] = useState([]);
   useEffect (()  => {
-    axios.get("https://doubtful-ring-lion.cyclic.app/api/testimonial").then(response => {
+    axios.get("https://doubtful-ring-lion.cyclic.app/api/portfolio").then(response => {
       const formattedData = response.data.data.map(item => ({
-        id:item_id,
+        id:item._id,
         image: item.image,
         title:item.github,
         demo:item.demo
@@ -71,7 +71,7 @@ const Portfolio = () => {
     } )
     
     
-  })
+  },  []);
     return (
         <section id='portfolio'>
             <h5>My Recent Work</h5>
@@ -79,7 +79,6 @@ const Portfolio = () => {
 
             <div className="container portfolio__container">
                 {
-
 
 
                     data.map(({ id, image, title, github, demo }) => (
@@ -97,7 +96,7 @@ const Portfolio = () => {
 
 
 
-                }
+               }
             </div>
         </section>
     )

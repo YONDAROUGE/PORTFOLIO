@@ -18,21 +18,21 @@ const Contact = () => {
   };
     return (
       <section id="contact">
-        <h5>Get in touch</h5>
-        <h2>Contact me</h2>
+        <h5>To get in touch</h5>
+        <h2>Contact me through</h2>
 
         <div className="container contact__container">
           <div className="contact__options">
             <article className="contact__option">
               <MdOutlineEmail className="contact__option__icon" />
               <h4>Email</h4>
-              <h5>myEmail@gmail.com</h5>
+              <h5>niccinchami@gmail.com</h5>
               <a
                 href="mailto:niccinchami@gmail.com"
                 target="_blank"
                 rel="noreferrer"
               >
-                send a message
+                Mail me
               </a>
             </article>
 
@@ -58,7 +58,7 @@ const Contact = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                Whatsapp me
+                Chat with me on Whatsapp
               </a>
             </article>
           </div>

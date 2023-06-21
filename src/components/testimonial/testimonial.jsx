@@ -1,11 +1,14 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
+import axios from 'axios';
 import './testimonial.css'
 import AVTR1 from '../../assets/changer.png'
 import AVTR2 from '../../assets/img2.png'
 import AVTR3 from '../../assets/img9.png'
 import AVTR4 from '../../assets/changer.png'
 
+
 // import Swiper core and required modules
+
 import { Navigation } from 'swiper';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -13,7 +16,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
-
+                                                                         
 const data = [
     {
         avatar: AVTR1,
@@ -38,7 +41,26 @@ const data = [
 ]
 
 const Testimonials = () => {
-    return (
+    const[data, setData] = useState([]);
+useEffect(() => {
+    axios
+    .get("https://doubtful-ring-lion.cyclic.app/api/testimonial")
+    .then(res=> {
+        const formmatedData = res.data.data.map(item => ({
+            id:item._id,
+            avatar:item.avatar,
+            name:item.name,
+            review:item.review,
+      
+        }));
+console.log(`Here i am: ${formmatedData}`);
+setData(formmatedData);
+} )
+.catch(error=> console.error(error));
+},[])
+    return(
+
+        
         <section id='testimonial'>
             <h5>Review from clients</h5>
             <h2>Testimonials</h2>
@@ -64,6 +86,6 @@ const Testimonials = () => {
             </Swiper>
         </section>
     )
-}
+            }
 
 export default Testimonials
