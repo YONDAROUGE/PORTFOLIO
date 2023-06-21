@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'; 
+import axios from 'axios';
 import './portfolio.css'
 import IMG1 from '../../assets/portfolio1.jpeg'
 import IMG2 from '../../assets/portfolio2.jpeg'
@@ -53,6 +54,24 @@ const data = [
 ]
 
 const Portfolio = () => {
+
+  const[data , setData] = useState([]);
+  useEffect (()  => {
+    axios.get("https://doubtful-ring-lion.cyclic.app/api/testimonial").then(response => {
+      const formattedData = response.data.data.map(item => ({
+        id:item_id,
+        image: item.image,
+        title:item.github,
+        demo:item.demo
+    }));
+    setData(formattedData)
+    }).catch(error=> {
+         console.log("Error fteching the portfolio data",error);
+
+    } )
+    
+    
+  })
     return (
         <section id='portfolio'>
             <h5>My Recent Work</h5>
@@ -60,8 +79,10 @@ const Portfolio = () => {
 
             <div className="container portfolio__container">
                 {
-                    data.map(({ id, image, title, github, demo }) => {
-                        return (
+
+
+
+                    data.map(({ id, image, title, github, demo }) => (
                             <article key={id} className='portfolio__item'>
                                 <div className="portfolio__item-image">
                                     <img src={image} alt={title} />
@@ -72,8 +93,10 @@ const Portfolio = () => {
                                     <a href={demo} target='_blank' className='btn btn-primary'>Live Demo</a>
                                 </div>
                             </article>
-                        )
-                    })
+                        ))
+
+
+
                 }
             </div>
         </section>
