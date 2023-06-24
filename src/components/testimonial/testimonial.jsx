@@ -17,34 +17,34 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
                                                                          
-const data = [
-    {
-        avatar: AVTR1,
-        name: 'Michelle',
-        review: 'I was so happy with the data analysis NICCI conducted when I carried out my survey. No regrets.'
-    },
-    {
-        avatar: AVTR2,
-        name: 'Kelton',
-        review: 'NICCI knows exactly what he is doing he is the absolute best.'
-    },
-    {
-        avatar: AVTR3,
-        name: 'Jake Allen',
-        review: 'I was very happy with the work that NICCI did on my website. He was able to take my vision and turn it into a reality. The website is exactly what I wanted and it looks great.'
-    },
-    {
-        avatar: AVTR4,
-        name: 'Hacynth',
-        review: 'NICCI is very easy to work with. He was always responsive to my feedback and was always willing to make changes to the content until I was satisfied'  
-    }
-]
+// const data = [
+//     {
+//         avatar: AVTR1,
+//         name: 'Michelle',
+//         review: 'I was so happy with the data analysis NICCI conducted when I carried out my survey. No regrets.'
+//     },
+//     {
+//         avatar: AVTR2,
+//         name: 'Kelton',
+//         review: 'NICCI knows exactly what he is doing he is the absolute best.'
+//     },
+//     {
+//         avatar: AVTR3,
+//         name: 'Jake Allen',
+//         review: 'I was very happy with the work that NICCI did on my website. He was able to take my vision and turn it into a reality. The website is exactly what I wanted and it looks great.'
+//     },
+//     {
+//         avatar: AVTR4,
+//         name: 'Hacynth',
+//         review: 'NICCI is very easy to work with. He was always responsive to my feedback and was always willing to make changes to the content until I was satisfied'  
+//     }
+// ]
 
 const Testimonials = () => {
     const[data, setData] = useState([]);
 useEffect(() => {
     axios
-    .get("https://doubtful-ring-lion.cyclic.app/api/testimonial")
+    .get("https://brick-red-puffer-vest.cyclic.app/api/testimonial")
     .then(res=> {
         const formmatedData = res.data.data.map(item => ({
             id:item._id,

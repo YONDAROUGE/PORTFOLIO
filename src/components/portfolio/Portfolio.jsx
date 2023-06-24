@@ -57,7 +57,7 @@ const Portfolio = () => {
 
   const[data , setData] = useState([]);
   useEffect (()  => {
-    axios.get("https://doubtful-ring-lion.cyclic.app/api/portfolio").then(response => {
+    axios.get("https://brick-red-puffer-vest.cyclic.app/api/portfolio").then(response => {
       const formattedData = response.data.data.map(item => ({
         id:item._id,
         image: item.image,

@@ -35,7 +35,7 @@ const About = () => {
               </article>
             </div>
             <p>
-              I am a young software engineer trained at the Faculty of Engineering and Technology (FET) of the University of Buea. 
+              I am a young software Engineering student being trained at the Faculty of Engineering and Technology (FET) of the University of Buea. 
               Being on demand for experience, i learned technologies such as react, react native in order to increase my knowledge at the end of being an
               engineer but also to be qualified. 
               I can express my self in both French and English fluently.
